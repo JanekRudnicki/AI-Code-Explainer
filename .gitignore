@@ -1,0 +1,13 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+.intellijPlatform/
+.run/
+
+# Gradle
+.gradle/
+build/
+
+# OS specific files
+.DS_Store
