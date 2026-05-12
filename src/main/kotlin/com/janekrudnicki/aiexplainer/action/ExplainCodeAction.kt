@@ -72,14 +72,14 @@ class ExplainCodeAction : AnAction() {
 
         val contextBuilder = StringBuilder()
         for (file in openFiles) {
-            if (file.length < 1024 * 1024) { // Pomiń pliki większe niż 1MB
+            if (file.length < 1024 * 1024) {
                 try {
                     val content = String(file.contentsToByteArray(), file.charset)
                     contextBuilder.append("--- File: ${file.name} ---\n")
                     contextBuilder.append(content)
                     contextBuilder.append("\n\n")
                 } catch (ignored: Exception) {
-                    // Ignoruj błędy odczytu plików binarnych
+
                 }
             }
         }

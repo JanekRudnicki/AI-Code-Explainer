@@ -22,7 +22,6 @@ object ExplanationPopup {
 
         val position = JBPopupFactory.getInstance().guessBestPopupLocation(editor)
 
-        // Zabezpieczenie, by dymek wyświetlał się blisko kursora
         val point = position.point ?: Point(0, 0)
 
         popup.show(position, Balloon.Position.below)
