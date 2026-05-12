@@ -21,6 +21,15 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
+
+    <actions>
+        <action id="com.janekrudnicki.aiexplainer.action.ExplainCodeAction"
+                class="com.janekrudnicki.aiexplainer.action.ExplainCodeAction"
+                text="Explain Code with AI"
+                description="Sends selected code to AI for an explanation">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
