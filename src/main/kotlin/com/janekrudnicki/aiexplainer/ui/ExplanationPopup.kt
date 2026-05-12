@@ -1,6 +1,7 @@
 package com.janekrudnicki.aiexplainer.ui
 
 import com.intellij.openapi.editor.Editor
+import com.intellij.openapi.ui.popup.Balloon
 import com.intellij.openapi.ui.popup.JBPopupFactory
 import java.awt.Point
 
@@ -24,6 +25,6 @@ object ExplanationPopup {
         // Zabezpieczenie, by dymek wyświetlał się blisko kursora
         val point = position.point ?: Point(0, 0)
 
-        popup.show(position, JBPopupFactory.BalloonPosition.below)
+        popup.show(position, Balloon.Position.below)
     }
 }
